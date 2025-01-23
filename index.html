@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoMed</title>
+    <style>
+        /* Modo nocturno */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333333; /* Cambiar color según preferencias */
+        }
+
+        .logo {
+            /* Añadir estilos para el logo aquí */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section button {
+            display: inline-block;
+            width: 23%;
+            padding: 10px;
+            margin: 10px 1%;
+            background-color: #444444; /* Cambiar color según preferencias */
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .section button:hover {
+            background-color: #555555; /* Cambiar color según preferencias */
+        }
+
+        .imagenes img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+            image-orientation:center;
+        }
+
+        .video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            background-color: #444444; /* Cambiar color según preferencias */
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333333; /* Cambiar color según preferencias */
+            color: #ffffff;
+        }
+
+        /* Adaptabilidad para móviles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .section button {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .imagenes img {
+                width: 100%;
+            }
+
+            .video {
+                height: auto;
+            }
+        }
+
+        /* Estilos para las imágenes y sus nombres */
+        .imagenes nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .imagenes nav ul li {
+            text-align: center;
+            flex: 1;
+        }
+
+        .imagenes nav ul li img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <!-- Aquí va el logo de la compañía --> </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#producto">Producto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-nosotros" class="section">
+            <h1>Sobre Nosotros</h1>
+            <p>GoMed es una compañía que busca acelerar los procesos de llenado y recoleccion de datos de parte del cliente y hacercelos llegar de manera eficiente al personal capacitado.</p>
+            <h2>Misión</h2>
+            <p>Agilizar la recoleccion y entrega de datos personales a doctores, aseguradoras y ambulancias para el uso correcto de estos.</p>
+            <h2>Visión</h2>
+            <p>Fumar duro y fuerte</p>
+            <h2>Objetivos</h2>
+            <p>Trasladar, entregar, cuidar y salvaguardar los datos de nuestros clientes.</p>
+            <div class="imagenes">
+                <nav>
+                    <ul>
+                        <li>
+                            <img src="ceo1.jpg" alt="CEO 1">
+                            <p>CEO 1</p>
+                        </li>
+                        <li>
+                            <img src="ceo2.jpeg" alt="CEO 2">
+                            <p>CEO 2</p>
+                        </li>
+                        <li>
+                            <img src="cto.jpg" alt="CTO">
+                            <p>CTO</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="producto" class="section">
+            <h1>Producto</h1>
+            <div class="video">
+                <video width="100%" height="auto" controls>
+                    <source src="Gymmeter.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            <p>Texto referente al producto...</p>
+            <div class="comentarios">
+                <!-- Espacio para comentarios o referencias de clientes -->
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h1>Contacto</h1>
+            <p>Correo electrónico: contacto@gomed.com</p>
+            <p>Número telefónico: +584246335755</p>
+            <p>Redes sociales:</p>
+            <ul>
+                <li><a href="https://facebook.com/gomed">Facebook</a></li>
+                <li><a href="https://instagram.com/gomed">Instagram</a></li>
+                <li><a href="https://wa.me/+584246335755">WhatsApp</a></li>
+                <li><a href="https://t.me/gomed">Telegram</a></li>
+            </ul>
+            <p>Ubicación: Dirección de la empresa</p>
+        </section>
+
+        <section id="futuro" class="section">
+            <h1>Futuro</h1>
+            <p>Información sobre futuros proyectos o crecimiento de la compañía...</p>
+            <div class="donaciones">
+                <!-- Capacidad de escribir o donar para futuros proyectos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GoMed. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
