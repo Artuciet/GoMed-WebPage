@@ -18,12 +18,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px 20px; /* Reducir el padding para hacer el header más pequeño */
             background-color: #333333; /* Cambiar color según preferencias */
         }
 
-        .logo {
-            /* Añadir estilos para el logo aquí */
+        .logo img {
+            width: 80px; /* Ajustar el tamaño del logo */
+            height: auto;
         }
 
         nav ul {
@@ -37,10 +38,13 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Color del logo */
+            border-radius: 20px; /* Hacer los botones ovalados */
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background-color: #0056b3; /* Color de fondo al pasar el mouse */
         }
 
         main {
@@ -134,7 +138,9 @@
 </head>
 <body>
     <header>
-        <div class="logo"> <!-- Aquí va el logo de la compañía --> </div>
+        <div class="logo">
+            <img src="LOGO2.jpg" alt="Logo de GoMed">
+        </div>
         <nav>
             <ul>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
@@ -159,11 +165,11 @@
                 <nav>
                     <ul>
                         <li>
-                            <img src="ceo1.jpg" alt="CEO 1">
+                            <img src="CEO1.jpg" alt="CEO 1">
                             <p>CEO 1</p>
                         </li>
                         <li>
-                            <img src="ceo2.jpeg" alt="CEO 2">
+                            <img src="CEO2.jpg" alt="CEO 2">
                             <p>CEO 2</p>
                         </li>
                         <li>
